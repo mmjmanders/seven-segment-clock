@@ -1,5 +1,8 @@
 {
-	"singleQuote": true,
-	"plugins": ["prettier-plugin-svelte"],
-	"overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }, {"files": "*.json", "options": {"singleQuote":false}}]
+  "singleQuote": true,
+  "plugins": ["prettier-plugin-svelte"],
+  "overrides": [
+    { "files": "*.svelte", "options": { "parser": "svelte" } },
+    { "files": "*.{css,html,json,scss}", "options": { "singleQuote": false } }
+  ]
 }
