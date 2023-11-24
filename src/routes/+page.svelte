@@ -1,7 +1,8 @@
 <script>
+  import Clock from '$lib/components/clock/Clock.svelte';
 </script>
 
-<h1>Welcome</h1>
+<Clock />
 
 <style>
 </style>
