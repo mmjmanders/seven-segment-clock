@@ -1,0 +1,12 @@
+:root {
+  --ssc-on: #f00;
+  --ssc-off: rgba(255, 0, 0, 0.1);
+}
+
+.on {
+  fill: var(--ssc-on);
+}
+
+.off {
+  fill: var(--ssc-off);
+}

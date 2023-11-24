@@ -1,4 +1,5 @@
 <script>
+  import './styles.scss';
 </script>
 
 <main>

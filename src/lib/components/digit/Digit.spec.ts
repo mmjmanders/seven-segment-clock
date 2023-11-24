@@ -13,13 +13,13 @@ describe('Digit', () => {
 
   it('Digit has all segments filled for an 8', () => {
     const { container } = render(Digit, { current: 8 });
-    const segments = container.querySelectorAll('polygon[fill="#F00"]');
+    const segments = container.querySelectorAll('polygon.on');
     expect(segments).toHaveLength(7);
   });
 
   it('Digit has all but one segments filled for a 0', () => {
     const { container } = render(Digit, { current: 0 });
-    const segments = container.querySelectorAll('polygon[fill="#F00"]');
+    const segments = container.querySelectorAll('polygon.on');
     expect(segments).toHaveLength(6);
   });
 });
