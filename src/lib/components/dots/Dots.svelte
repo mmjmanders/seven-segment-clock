@@ -1,18 +1,5 @@
 <script lang="ts">
-  import { onDestroy, onMount } from 'svelte';
-
-  let interval: number;
-  let on = true;
-
-  onMount(() => {
-    interval = window.setInterval(() => {
-      on = !on;
-    }, 500);
-  });
-
-  onDestroy(() => {
-    clearInterval(interval);
-  });
+  export let on: boolean;
 
   $: fill = on ? 'on' : 'off';
 </script>

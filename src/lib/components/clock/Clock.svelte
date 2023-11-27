@@ -5,11 +5,13 @@
 
   let time = new Date();
   let interval: number;
+  let on = true;
 
   onMount(() => {
     interval = window.setInterval(() => {
       time = new Date();
-    }, 1000);
+      on = !on;
+    }, 500);
   });
 
   onDestroy(() => {
@@ -20,7 +22,7 @@
 <div class="clock">
   <Digit current={Math.floor(time.getHours() / 10)} />
   <Digit current={time.getHours() % 10} />
-  <Dots />
+  <Dots {on} />
   <Digit current={Math.floor(time.getMinutes() / 10)} />
   <Digit current={time.getMinutes() % 10} />
 </div>
