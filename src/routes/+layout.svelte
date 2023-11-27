@@ -24,12 +24,12 @@
             aria-current={$page.url.pathname === '/' ? 'page' : undefined}
             href="/">Home</a
           >
-          <a
-            class="nav-link"
-            class:active={$page.url.pathname === '/about'}
-            aria-current={$page.url.pathname === '/about' ? 'page' : undefined}
-            href="/about">About</a
-          >
+          <!--          <a-->
+          <!--            class="nav-link"-->
+          <!--            class:active={$page.url.pathname === '/about'}-->
+          <!--            aria-current={$page.url.pathname === '/about' ? 'page' : undefined}-->
+          <!--            href="/about">About</a-->
+          <!--          >-->
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ describe('Dots', () => {
   let dots: RenderResult<Dots>;
 
   beforeEach(() => {
-    dots = render(Dots);
+    dots = render(Dots, { on: true });
   });
 
   afterEach(() => {
