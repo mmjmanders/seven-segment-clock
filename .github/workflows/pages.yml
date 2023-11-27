@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  pages:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -24,9 +24,19 @@ jobs:
       - env:
           BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
-          env
           pnpm build
-
       - uses: actions/upload-pages-artifact@v2
         with:
           path: 'build/'
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v2
