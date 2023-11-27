@@ -1,0 +1,43 @@
+$font-family-sans-serif: "Ubuntu", sans-serif !default;
+
+@import "@fontsource/ubuntu";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../../node_modules/bootstrap/scss/bootstrap-utilities";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+
+:root {
+  --ssc-on: #f00;
+  --ssc-off: rgba(255, 0, 0, 0.1);
+  --ssc-body-bg: var(--bs-body-bg);
+}
+
+.on {
+  fill: var(--ssc-on);
+}
+
+.off {
+  fill: var(--ssc-off);
+}
+
+main {
+  .clock {
+    display: flex;
+    justify-content: space-between;
+  }
+  svg {
+    flex-grow: 1;
+    height: auto;
+    max-height: 100vh;
+
+    &.dots {
+      flex-grow: 0.5;
+    }
+  }
+}
