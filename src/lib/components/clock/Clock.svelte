@@ -27,8 +27,9 @@
   <Digit current={time.getMinutes() % 10} />
 </div>
 
-<style>
+<style lang="scss">
   .clock {
     display: flex;
+    justify-content: space-between;
   }
 </style>

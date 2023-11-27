@@ -15,3 +15,12 @@
   <circle cx="24" cy="50" r="10" class={fill} />
   <circle cx="24" cy="100" r="10" class={fill} />
 </svg>
+
+<style lang="scss">
+  svg {
+    flex-grow: 0.5;
+    aspect-ratio: 3 / 5;
+    width: 100%;
+    height: auto;
+  }
+</style>

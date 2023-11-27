@@ -27,5 +27,11 @@
   <polygon id="g" class={fill(6)} points="1, 9  2, 8  8, 8  9, 9  8,10  2,10" />
 </svg>
 
-<style>
+<style lang="scss">
+  svg {
+    flex-grow: 1;
+    aspect-ratio: 3 / 5;
+    width: 100%;
+    height: auto;
+  }
 </style>
