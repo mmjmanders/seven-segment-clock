@@ -15,7 +15,7 @@
   width="96"
   height="160"
   viewBox="-1 -1 12 20"
-  stroke="var(--bs-body-bg)"
+  stroke="var(--ssc-body-bg)"
   stroke-width=".25"
 >
   <polygon id="a" class={fill(0)} points="1, 1  2, 0  8, 0  9, 1  8, 2  2, 2" />
@@ -26,12 +26,3 @@
   <polygon id="f" class={fill(5)} points="1, 9  0, 8  0, 2  1, 1  2, 2  2, 8" />
   <polygon id="g" class={fill(6)} points="1, 9  2, 8  8, 8  9, 9  8,10  2,10" />
 </svg>
-
-<style lang="scss">
-  svg {
-    flex-grow: 1;
-    aspect-ratio: 3 / 5;
-    width: 100%;
-    height: auto;
-  }
-</style>
