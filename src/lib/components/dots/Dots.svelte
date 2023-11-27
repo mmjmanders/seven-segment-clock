@@ -9,7 +9,7 @@
   width="48"
   height="160"
   viewBox="0 0 48 150"
-  stroke="#FFF"
+  stroke="var(--bs-body-bg)"
   stroke-width=".25"
 >
   <circle cx="24" cy="50" r="10" class={fill} />

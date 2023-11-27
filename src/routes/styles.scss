@@ -1,6 +1,22 @@
+$font-family-sans-serif: "Ubuntu", sans-serif !default;
+$headings-font-family: "Teko", sans-serif !default;
+
+@import "@fontsource/teko";
+@import "@fontsource/ubuntu";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../../node_modules/bootstrap/scss/bootstrap-utilities";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+
 :root {
   --ssc-on: #f00;
-  --ssc-off: rgba(255, 0, 0, 0.1);
+  --ssc-off: rgba(255, 0, 0, 0.15);
 }
 
 .on {

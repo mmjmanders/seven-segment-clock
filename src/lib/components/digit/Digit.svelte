@@ -15,7 +15,7 @@
   width="96"
   height="160"
   viewBox="-1 -1 12 20"
-  stroke="#FFF"
+  stroke="var(--bs-body-bg)"
   stroke-width=".25"
 >
   <polygon id="a" class={fill(0)} points="1, 1  2, 0  8, 0  9, 1  8, 2  2, 2" />
