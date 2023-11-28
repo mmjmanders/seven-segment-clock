@@ -5,9 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
-  '@fontsource/teko':
-    specifier: ^5.0.17
-    version: 5.0.17
   '@fontsource/ubuntu':
     specifier: ^5.0.8
     version: 5.0.8
@@ -381,10 +378,6 @@ packages:
   /@fastify/busboy@2.1.0:
     resolution: {integrity: sha512-+KpH+QxZU7O4675t3mnkQKcZZg56u+K/Ct2K+N2AZYNVK8kyeo/bI18tI8aPm3tvNNRyTWfj6s5tnGNlcbQRsA==}
     engines: {node: '>=14'}
-    dev: true
-
-  /@fontsource/teko@5.0.17:
-    resolution: {integrity: sha512-2/E/xf+7PZh1wtHs8THo20ePihSQqSV9/9vlVeGX1ep9zZxJfT263JdI+asdX7QXE+cVnTeFgQ7j+xlmExzWxg==}
     dev: true
 
   /@fontsource/ubuntu@5.0.8:
