@@ -23,7 +23,7 @@ jobs:
           pnpm install --frozen-lockfile --prefer-offline
       - run: |
           pnpm package
-          pnpm prepare-release
+          cp -v README.md LICENSE.md package.json ./dist
           pnpm publish ./dist --access public --force --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
