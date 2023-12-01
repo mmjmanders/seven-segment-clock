@@ -26,3 +26,10 @@
   <Digit current={Math.floor(time.getMinutes() / 10)} />
   <Digit current={time.getMinutes() % 10} />
 </div>
+
+<style lang="scss">
+  .clock {
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
