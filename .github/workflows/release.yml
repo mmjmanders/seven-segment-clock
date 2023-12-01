@@ -1,11 +1,11 @@
-name: test
+name: release
 on:
   push:
     tags:
       - '**'
 
 jobs:
-  test:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -24,6 +24,6 @@ jobs:
       - run: |
           pnpm package
           pnpm prepare-release
-          pnpm publish ./dist --access public --force
+          pnpm publish ./dist --access public --force --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
