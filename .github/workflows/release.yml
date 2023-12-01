@@ -1,11 +1,12 @@
 name: test
 on:
-  pull_request:
+  push:
+    tags:
+      - '**'
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: mcr.microsoft.com/playwright:v1.40.1-jammy
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
@@ -17,8 +18,12 @@ jobs:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
           cache-dependency-path: 'pnpm-lock.yaml'
+          registry-url: 'https://registry.npmjs.org'
       - run: |
           pnpm install --frozen-lockfile --prefer-offline
       - run: |
-          pnpm test:unit
-          pnpm test:integration
+          pnpm package
+          pnpm prepare-release
+          pnpm publish ./dist --access public --force
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
