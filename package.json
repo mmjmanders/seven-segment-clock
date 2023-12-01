@@ -12,7 +12,6 @@
     "format": "prettier --write .",
     "package": "pnpm check && svelte-package",
     "prepare": "husky install",
-    "prepare-release": "node prepare-release.js",
     "test:integration": "playwright test",
     "test:integration:ui": "playwright test --ui",
     "test:unit": "vitest run",
