@@ -28,15 +28,15 @@
 
 <style lang="scss">
   .on {
-    fill: var(--ssc-on);
+    fill: var(--ssc-on, #f00);
   }
 
   .off {
-    fill: var(--ssc-off);
+    fill: var(--ssc-off, rgba(255, 0, 0, 0.1));
   }
 
   svg {
-    stroke: var(--ssc-body-bg);
+    stroke: var(--ssc-body-bg, #fff);
     flex-grow: 1;
     height: auto;
     max-height: 100%;

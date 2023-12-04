@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, afterEach } from 'vitest';
 import { cleanup, render, type RenderResult } from '@testing-library/svelte';
-import { Dots } from '$lib';
+import Dots from '$lib/components/dots/Dots.svelte';
 
 describe('Dots', () => {
   let dots: RenderResult<Dots>;

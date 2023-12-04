@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it } from 'vitest';
 import { cleanup, render } from '@testing-library/svelte';
-import { Digit } from '$lib';
+import Digit from '$lib/components/digit/Digit.svelte';
 
 describe('Digit', () => {
   afterEach(() => {
