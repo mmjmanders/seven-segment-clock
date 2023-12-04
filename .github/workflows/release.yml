@@ -24,6 +24,6 @@ jobs:
       - run: |
           pnpm package
           cp -v README.md LICENSE.md package.json ./dist
-          pnpm publish ./dist --access public --force --no-git-checks
+          pnpm publish --access public --force --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

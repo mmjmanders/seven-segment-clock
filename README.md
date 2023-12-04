@@ -1,38 +1,24 @@
-# create-svelte
+# svelte-seven-segment-clock
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Usage
 
-## Creating a project
+Install `svelte-seven-segment-clock` using your favorite Node.js package manager
 
-If you're seeing this, you've probably already done this step. Congrats!
+```sveltehtml
+<script>
+    import { Clock } from 'svelte-seven-segment-clock'
+</script>
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+<div>
+    <Clock />
+</div>
 
-# create a new project in my-app
-npm create svelte@latest my-app
+<style>
+    // To override the default colors, use CSS variables (defaults are shown here)
+    :root {
+        --ssc-body-bg: #FFF; // Same as background color is best to get transparent strokes
+        --ssc-on: #F00;
+        --ssc-off: rgba(255, 0, 0, .1);
+    }
+</style>
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
