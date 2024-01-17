@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: mcr.microsoft.com/playwright:v1.40.1-jammy
+    container: mcr.microsoft.com/playwright:v1.41.0-jammy
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
